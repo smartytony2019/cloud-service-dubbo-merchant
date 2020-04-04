@@ -7,14 +7,6 @@ spring:
   application:
     name: cloud-dubbo-consumer
 
-  cloud:
-    #熔断器
-    sentinel:
-      transport:
-        port: ${server.port}
-        dashboard: 103.84.110.202:8002
-
-
   datasource:
     url: jdbc:mysql://103.84.110.202:3306/cloud_merchant?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
     username: root
@@ -72,6 +64,7 @@ dubbo:
     timeout: 3000
   consumer:
     check: false
+    timeout: 3000
   application:
     name: ${spring.application.name}
   protocol:
@@ -80,12 +73,3 @@ dubbo:
     serialization: kryo
   registry:
     address: nacos://127.0.0.1:8848
-
-management:  #actuator
-  server:
-    port: 9901
-  endpoints:
-    web:
-      base-path: /
-      exposure:
-        include: "*"

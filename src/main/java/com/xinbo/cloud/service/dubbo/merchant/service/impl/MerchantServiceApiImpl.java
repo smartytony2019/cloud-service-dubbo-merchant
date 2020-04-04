@@ -3,7 +3,7 @@ package com.xinbo.cloud.service.dubbo.merchant.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.xinbo.cloud.common.domain.common.Merchant;
 import com.xinbo.cloud.common.mapper.common.MerchantMapper;
-import com.xinbo.cloud.common.service.api.MerchantService;
+import com.xinbo.cloud.common.service.api.MerchantServiceApi;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 
 @Service(version = "1.0.0")
-public class MerchantServiceImpl implements MerchantService {
+public class MerchantServiceApiImpl implements MerchantServiceApi {
 
     @Autowired
     private MerchantMapper merchantMapper;

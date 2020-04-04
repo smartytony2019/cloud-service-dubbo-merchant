@@ -73,13 +73,13 @@
         <!-- Private Project -->
         <dependency>
             <groupId>com.xinbo</groupId>
-            <artifactId>cloud-common-service-api</artifactId>
+            <artifactId>cloud-common-service</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.xinbo</groupId>
-            <artifactId>cloud-common-mapper</artifactId>
+            <artifactId>cloud-common-service-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
