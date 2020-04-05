@@ -26,7 +26,7 @@ import java.util.List;
 public class MerchantController {
 
     /* 内部RPC接口 */
-    @Reference(version = "1.0.0", mock = "com.xinbo.cloud.common.service.mock.UserInfoServiceMock")
+    @Reference(version = "A1.0.0", mock = "com.xinbo.cloud.common.service.mock.UserInfoServiceMock")
     private UserInfoServiceApi userInfoServiceApi;
 
     /* 外部RESTFUL接口 */

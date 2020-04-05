@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @desc file desc
  */
 
-@Service(version = "1.0.0")
+@Service(version = "A1.0.0")
 public class MerchantServiceApiImpl implements MerchantServiceApi {
 
     @Autowired
